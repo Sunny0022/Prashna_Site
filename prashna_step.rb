@@ -37,7 +37,6 @@ Then(/^I should see all elements of the page$/) do
   @fields = SignUpPage.new
   @fields.load
   @fields.wait_until_name_visible
-    #  @fields.wait_until_mail_visible
 end
 
 And(/^I fill with (.*), (.*), (.*) and (.*)$/) do |name, email, passw, confirm_pass|
